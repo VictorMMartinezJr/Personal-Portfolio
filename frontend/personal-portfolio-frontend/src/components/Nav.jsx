@@ -13,7 +13,7 @@ const Nav = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoadNav(true);
-    }, 1500);
+    }, 500);
   }, []);
 
   return (
