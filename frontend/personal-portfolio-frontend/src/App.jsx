@@ -1,4 +1,5 @@
 import "./App.css";
+import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import Spotlight from "./components/Spotlight";
 import StarsBackground from "./components/StarsBackground";
@@ -9,7 +10,7 @@ function App() {
       <StarsBackground />
       <Spotlight />
       <Nav />
-      <h1>My Portfolio</h1>
+      <Hero />
     </main>
   );
 }

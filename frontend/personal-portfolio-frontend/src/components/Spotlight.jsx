@@ -8,7 +8,7 @@ const Spotlight = () => {
         transition={{ duration: 1 }}
         className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none z-0"
       >
-        <div className="relative left-1/2 -translate-x-1/2 w-[70%] h-[40vh] bg-gradient-to-b from-white/20 to-transparent blur-3xl" />
+        <div className="relative left-1/2 -translate-x-1/2 w-[70%] h-[30vh] bg-gradient-to-b from-white/20 to-transparent blur-3xl" />
       </motion.div>
     </>
   );

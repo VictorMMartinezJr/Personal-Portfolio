@@ -18,11 +18,11 @@ const Nav = () => {
 
   return (
     <motion.nav
-      className="relative h-[8vh] flex items-center w-full px-2 lg:px-4 xl:px-6 2xl:px-8"
-      initial={{ opacity: 0, top: -300 }}
+      className="relative h-[8vh] flex items-center w-full px-2 lg:px-8 xl:px-12 2xl:px-16"
+      initial={{ opacity: 0, y: -300 }}
       animate={{
         opacity: loadNav ? 1 : 0,
-        top: loadNav ? 0 : -300,
+        y: loadNav ? 0 : -300,
       }}
       transition={{ duration: 1, ease: "easeInOut" }}
     >
@@ -38,7 +38,7 @@ const Nav = () => {
       {/* Menu Button */}
       <button
         aria-label="Toggle menu"
-        className="cursor-pointer z-20 md:hidden"
+        className="cursor-pointer z-30 md:hidden"
         onClick={handleClick}
       >
         {/* Line 1 */}
@@ -74,7 +74,7 @@ const Nav = () => {
         {menuClicked && (
           <motion.ul
             key={"menu"}
-            className="absolute overflow-hidden h-[40vh] w-full bg-gradient-to-b from-white/10 to-black/90 backdrop-blur-md  text-gray-300 flex flex-col justify-around top-0 left-1/2 -translate-x-1/2 text-center z-10 md:hidden"
+            className="absolute overflow-hidden h-[40vh] w-full bg-gradient-to-b from-white/10 to-black/90 backdrop-blur-md  text-gray-300 flex flex-col justify-around top-0 left-1/2 -translate-x-1/2 text-center z-20 md:hidden"
             initial={{ y: -100, opacity: 0, filter: "blur(10px)" }}
             animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             exit={{ y: -100, opacity: 0, filter: "blur(10px)" }}
@@ -146,10 +146,7 @@ const Nav = () => {
       {/* Icons & Button */}
       <ul className="hidden md:flex justify-end items-center gap-4 text-lg font-semibold flex-1">
         <li>
-          <a
-            href="#"
-            className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-blue-600 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
-          >
+          <a href="#">
             <img
               src={assets.linkedin}
               alt="Linkedin icon"
@@ -158,10 +155,7 @@ const Nav = () => {
           </a>
         </li>
         <li>
-          <a
-            href="#"
-            className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-blue-600 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
-          >
+          <a href="#">
             <img
               src={assets.github}
               alt="Github icon"
