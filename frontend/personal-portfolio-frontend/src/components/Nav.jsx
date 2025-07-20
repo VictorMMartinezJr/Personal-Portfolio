@@ -4,30 +4,20 @@ import { assets } from "../assets/assets";
 
 const Nav = () => {
   const [menuClicked, setMenuClicked] = useState(false);
-  const [loadNav, setLoadNav] = useState(false);
 
   const handleClick = () => {
     setMenuClicked((prev) => !prev);
   };
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoadNav(true);
-    }, 500);
-  }, []);
-
   return (
     <motion.nav
       className="relative h-[8vh] flex items-center w-full px-2 lg:px-8 xl:px-12 2xl:px-16"
-      initial={{ opacity: 0, y: -300 }}
-      animate={{
-        opacity: loadNav ? 1 : 0,
-        y: loadNav ? 0 : -300,
-      }}
-      transition={{ duration: 1, ease: "easeInOut" }}
+      initial={{ y: -300 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.8 }}
     >
       <div className="flex items-center gap-2 flex-1">
-        <p className="font-semibold">Victor</p>
+        <p className="hidden sm:block sm:font-semibold">Victor</p>
         <img
           src={assets.navLogo}
           className="h-10 w-10 md:h-14 md:w-14 xl:h-16 xl:w-16"
@@ -150,7 +140,7 @@ const Nav = () => {
             <img
               src={assets.linkedin}
               alt="Linkedin icon"
-              className="w-4 h-4 lg:w-7 lg:h-7 transform transition-transform duration-200 hover:scale-150"
+              className="w-4 h-4 md:w-7 md:h-7 transform transition-transform duration-200 hover:scale-150"
             />
           </a>
         </li>
@@ -159,7 +149,7 @@ const Nav = () => {
             <img
               src={assets.github}
               alt="Github icon"
-              className="w-4 h-4 lg:w-7 lg:h-7 transform transition-transform duration-200 hover:scale-150"
+              className="w-4 h-4 md:w-7 md:h-7 transform transition-transform duration-200 hover:scale-150"
             />
           </a>
         </li>

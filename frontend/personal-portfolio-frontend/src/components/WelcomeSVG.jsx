@@ -7,9 +7,9 @@ const WelcomeSVG = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
-      initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      transition={{ duration: 0.5, ease: "easeInOut", delay: 1.7 }}
     >
       <g id="welcomeAstronaut">
         <path

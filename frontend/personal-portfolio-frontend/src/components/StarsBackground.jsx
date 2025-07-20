@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { useState } from "react";
 const STAR_COUNT = 100;
 const STAR_MIN_SIZE = 1;
 const STAR_MAX_SIZE = 3;
@@ -31,7 +33,12 @@ const StarsBackground = () => {
   });
 
   return (
-    <div className="fixed top-0 left-0 w-full">
+    <motion.div
+      className="fixed top-0 left-0 w-full"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 0.8 }}
+    >
       <style>{`
         @keyframes twinkle {
           0%, 100% { opacity: 0.8; }
@@ -39,7 +46,7 @@ const StarsBackground = () => {
         }
       `}</style>
       {stars}
-    </div>
+    </motion.div>
   );
 };
 
