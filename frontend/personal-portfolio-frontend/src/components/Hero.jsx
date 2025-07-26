@@ -19,7 +19,7 @@ const Hero = () => {
           Hi there, I'm
         </motion.p>
         <motion.h1
-          className="font-bold text-3xl text-blue-600 sm:text-6xl 2xl:text-8xl"
+          className="font-bold text-3xl bg-gradient-to-b from-white via-pink-300 to-purple-700 bg-clip-text text-transparent sm:text-6xl 2xl:text-8xl"
           initial={{ scale: 0 }}
           animate={{
             scale: 1,
@@ -29,7 +29,7 @@ const Hero = () => {
           Victor Martinez
         </motion.h1>
         <motion.h2
-          className="text-gray-200 font-bold text-xl sm:text-4xl 2xl:text-6xl"
+          className="bg-gradient-to-b  from-pink-300  to-white bg-clip-text text-transparent font-bold text-xl sm:text-4xl 2xl:text-6xl"
           initial={{ scale: 0 }}
           animate={{
             scale: 1,
@@ -60,9 +60,11 @@ const Hero = () => {
             }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 1.4 }}
           >
-            <button className="border-2 border-blue-600 px-4 py-2 rounded-xl cursor-pointer transform transition-transform duration-200 hover:scale-105 sm:text-xl">
-              Get In Touch
-            </button>
+            <div className="p-0.5 bg-gradient-to-r from-white via-purple-700 to-pink-500 rounded-xl">
+              <button className="border-2 border-blue-600 px-4 py-2 rounded-xl cursor-pointer bg-black text-white transform transition-transform duration-200 hover:scale-105 sm:text-xl">
+                Get In Touch
+              </button>
+            </div>
           </motion.div>
         </div>
 
@@ -72,7 +74,7 @@ const Hero = () => {
             <motion.img
               src={assets.linkedin}
               alt="Linkedin icon"
-              className="w-4 h-4 sm:w-7 sm:h-7 transform transition-transform duration-200 hover:scale-150 mr-4"
+              className="w-7 h-7 transform transition-transform duration-200 hover:scale-150 mr-4"
               initial={{ scale: 0 }}
               animate={{
                 scale: 1,
@@ -84,7 +86,7 @@ const Hero = () => {
             <motion.img
               src={assets.github}
               alt="Linkedin icon"
-              className="w-4 h-4 sm:w-7 sm:h-7 transform transition-transform duration-200 hover:scale-150"
+              className="w-7 h-7 transform transition-transform duration-200 hover:scale-150"
               initial={{ scale: 0 }}
               animate={{
                 scale: 1,

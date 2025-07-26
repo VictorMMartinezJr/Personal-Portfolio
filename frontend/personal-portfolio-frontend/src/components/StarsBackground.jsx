@@ -37,7 +37,7 @@ const StarsBackground = () => {
       className="fixed top-0 left-0 w-full"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 0.8 }}
+      transition={{ duration: 1 }}
     >
       <style>{`
         @keyframes twinkle {
