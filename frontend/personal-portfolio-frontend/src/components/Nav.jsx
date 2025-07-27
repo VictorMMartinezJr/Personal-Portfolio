@@ -17,10 +17,10 @@ const Nav = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
     >
       <div className="flex items-center gap-2 flex-1">
-        <p className="hidden sm:block sm:font-semibold">Victor</p>
+        <p className="hidden sm:block sm:font-semibold sm:text-xl">Victor</p>
         <img
           src={assets.navLogo}
-          className="h-10 w-10 md:h-14 md:w-14 xl:h-16 xl:w-16"
+          className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 xl:h-16 xl:w-16"
           alt="Victor Martinez coding icon"
         />
       </div>
@@ -64,7 +64,7 @@ const Nav = () => {
         {menuClicked && (
           <motion.ul
             key={"menu"}
-            className="absolute overflow-hidden h-[40vh] w-full bg-gradient-to-b from-white/10 to-black/90 backdrop-blur-md  text-gray-300 flex flex-col justify-around top-0 left-1/2 -translate-x-1/2 text-center z-20 md:hidden"
+            className="absolute overflow-hidden h-[100vh] w-full bg-gradient-to-b from-white/10 to-black/100 backdrop-blur-md flex flex-col justify-around top-0 left-1/2 -translate-x-1/2 text-center font-bold z-20 text-xl md:hidden"
             initial={{ y: -100, opacity: 0, filter: "blur(10px)" }}
             animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
             exit={{ y: -100, opacity: 0, filter: "blur(10px)" }}
@@ -94,7 +94,7 @@ const Nav = () => {
         <li>
           <a
             href="#home"
-            className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-blue-600 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
+            className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-purple-500 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
           >
             Home
           </a>
@@ -102,7 +102,7 @@ const Nav = () => {
         <li>
           <a
             href="#about"
-            className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-blue-600 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
+            className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-purple-500 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
           >
             About
           </a>
@@ -110,7 +110,7 @@ const Nav = () => {
         <li>
           <a
             href="#skills"
-            className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-blue-600 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
+            className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-purple-500 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
           >
             Skills
           </a>
@@ -118,7 +118,7 @@ const Nav = () => {
         <li>
           <a
             href="#projects"
-            className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-blue-600 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
+            className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-purple-500 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
           >
             Projects
           </a>
@@ -126,7 +126,7 @@ const Nav = () => {
         <li>
           <a
             href="#contact"
-            className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-blue-600 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
+            className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-purple-500 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
           >
             Contact
           </a>
@@ -154,7 +154,7 @@ const Nav = () => {
           </a>
         </li>
         <li>
-          <button className="bg-blue-600 px-4 py-2 rounded-xl cursor-pointer transform transition-transform duration-200 hover:scale-105">
+          <button className="bg-purple-500 px-4 py-2 rounded-xl cursor-pointer transform transition-transform duration-200 hover:scale-105">
             Lets Chat!
           </button>
         </li>

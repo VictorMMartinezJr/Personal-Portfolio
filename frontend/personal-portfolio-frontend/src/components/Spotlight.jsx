@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 const Spotlight = ({ position, rotate }) => {
   return (
-    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full pointer-events-none z-0 lg:hidden">
+    <div className="absolute top-0  w-full pointer-events-none z-0">
       <motion.div
-        className="relative w-[20%] h-[60vh] bg-purple-700 blur-3xl lg:left-0 lg:-top-[15rem] lg:-translate-x-0 lg:-rotate-45 lg:w-[40%] lg:h-[100vh]"
+        className="relative w-[20%] h-[60vh] bg-purple-700 blur-3xl lg:left-0 lg:-top-[15rem] lg:-translate-x-0 lg:-rotate-45 lg:w-[40%] lg:h-[40vh]"
         style={{
           left: position,
           transform: `translateX(-${position})`,
