@@ -90,7 +90,7 @@ const Nav = () => {
       </AnimatePresence>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex justify-center gap-4 items-center text-lg font-semibold flex-1">
+      <ul className="hidden md:flex justify-center gap-4 items-center text-lg lg:text-xl lg:gap-8 xl:gap-12 font-semibold flex-1">
         <li>
           <a
             href="#home"
