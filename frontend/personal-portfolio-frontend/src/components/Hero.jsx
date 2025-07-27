@@ -48,7 +48,7 @@ const Hero = () => {
             }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 1.3 }}
           >
-            <button className="bg-blue-600 px-4 py-2 mr-4 rounded-xl cursor-pointer transform transition-transform duration-200 hover:scale-105 sm:text-xl">
+            <button className="bg-purple-500 px-4 py-2 mr-4 rounded-xl cursor-pointer transform transition-transform duration-200 hover:scale-105 sm:text-xl">
               View My Work
             </button>
           </motion.div>
