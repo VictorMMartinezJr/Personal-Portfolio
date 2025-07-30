@@ -2,6 +2,7 @@ import "./App.css";
 import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
+import Skills from "./components/Skills";
 import Spotlight from "./components/Spotlight";
 import StarsBackground from "./components/StarsBackground";
 
@@ -15,6 +16,7 @@ function App() {
       <Nav />
       <Hero />
       <AboutMe />
+      <Skills />
     </main>
   );
 }

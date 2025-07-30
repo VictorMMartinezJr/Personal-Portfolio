@@ -2,7 +2,10 @@ import AboutMeSVG from "./AboutMeSVG";
 
 const AboutMe = () => {
   return (
-    <div className="h-auto flex flex-col justify-center items-center px-4 lg:flex-row lg:text-left lg:px-8 xl:px-12 2xl:px-16">
+    <div
+      id="about"
+      className="h-auto flex flex-col justify-center items-center px-4 lg:flex-row lg:text-left lg:px-8 xl:px-12 2xl:px-16"
+    >
       <div className="flex flex-col justify-center items-center text-center lg:flex-1">
         <h1 className="font-bold text-3xl text-purple-500 sm:text-6xl 2xl:text-8xl">
           About Me

@@ -70,19 +70,19 @@ const Nav = () => {
             exit={{ y: -100, opacity: 0, filter: "blur(10px)" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <li>
+            <li onClick={handleClick}>
               <a href="#home">Home</a>
             </li>
-            <li>
+            <li onClick={handleClick}>
               <a href="#about">About</a>
             </li>
-            <li>
+            <li onClick={handleClick}>
               <a href="#skills">Skills</a>
             </li>
-            <li>
+            <li onClick={handleClick}>
               <a href="#projects">Projects</a>
             </li>
-            <li>
+            <li onClick={handleClick}>
               <a href="#contact">Contact</a>
             </li>
           </motion.ul>
