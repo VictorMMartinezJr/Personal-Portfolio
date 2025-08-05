@@ -9,7 +9,7 @@ const Hero = () => {
       {/* Text */}
       <div className="w-full flex flex-col justify-center items-center gap-6 flex-1 lg:items-start">
         <motion.p
-          className="text-center z-10 sm:text-xl lg:text-left"
+          className="text-center z-10 sm:text-xl lg:text-left xl:text-2xl"
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
@@ -29,7 +29,7 @@ const Hero = () => {
           Victor Martinez
         </motion.h1>
         <motion.h2
-          className="bg-gradient-to-b  from-pink-300  to-white bg-clip-text text-transparent font-bold text-xl sm:text-4xl 2xl:text-6xl"
+          className="bg-gradient-to-b from-pink-300  to-white bg-clip-text text-transparent font-bold text-xl sm:text-4xl 2xl:text-6xl"
           initial={{ scale: 0 }}
           animate={{
             scale: 1,
@@ -40,7 +40,7 @@ const Hero = () => {
         </motion.h2>
 
         {/* CTA buttons */}
-        <div className="flex">
+        <div className="flex gap-4">
           <motion.div
             initial={{ scale: 0 }}
             animate={{
@@ -48,9 +48,11 @@ const Hero = () => {
             }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 1.3 }}
           >
-            <button className="g-purple-500 px-4 py-2 mr-4 rounded-xl cursor-pointer transform transition-transform duration-200 hover:scale-105 sm:text-xl">
-              View My Work
-            </button>
+            <div className="p-0.5 rounded-xl">
+              <button className="bg-purple-700 border-2 border-purple-700 px-4 py-2 rounded-xl cursor-pointer text-white transform transition-transform duration-200 hover:scale-105 sm:text-xl">
+                View My Work
+              </button>
+            </div>
           </motion.div>
 
           <motion.div
