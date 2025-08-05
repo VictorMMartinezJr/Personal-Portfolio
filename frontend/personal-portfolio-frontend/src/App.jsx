@@ -2,6 +2,7 @@ import "./App.css";
 import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
+import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills";
 import Spotlight from "./components/Spotlight";
 import StarsBackground from "./components/StarsBackground";
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <AboutMe />
       <Skills />
+      <Projects />
     </main>
   );
 }
