@@ -72,7 +72,7 @@ const Hero = () => {
         </div>
 
         {/* Icons */}
-        <div className="flex gap-2 xl:gap-4">
+        <div className="flex xl:gap-4">
           <a
             href="#"
             title="LinkedIn"
@@ -81,7 +81,16 @@ const Hero = () => {
             aria-label="Visit my LinkedIn profile"
             className="cursor-pointer"
           >
-            <CiLinkedin className="w-7 h-7 transform transition-transform duration-200 hover:scale-150 sm:w-9 sm:h-9 xl:w-11 xl:h-11" />
+            <motion.div
+              className="w-7 h-7 transform transition-transform duration-200 hover:scale-150 mr-4"
+              initial={{ scale: 0 }}
+              animate={{
+                scale: 1,
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut", delay: 1.4 }}
+            >
+              <CiLinkedin className="w-7 h-7 sm:w-9 sm:h-9 xl:w-11 xl:h-11" />
+            </motion.div>
           </a>
           <a
             href="https://github.com/VictorMMartinezJr"
@@ -91,7 +100,16 @@ const Hero = () => {
             aria-label="Visit my GitHub profile"
             className="cursor-pointer"
           >
-            <FaGithubAlt className="w-7 h-7 transform transition-transform duration-200 hover:scale-150 sm:w-9 sm:h-9 xl:w-11 xl:h-11" />
+            <motion.div
+              className="transform transition-transform duration-200 hover:scale-150"
+              initial={{ scale: 0 }}
+              animate={{
+                scale: 1,
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut", delay: 1.5 }}
+            >
+              <FaGithubAlt className="w-7 h-7 sm:w-9 sm:h-9 xl:w-11 xl:h-11" />
+            </motion.div>
           </a>
         </div>
       </div>
