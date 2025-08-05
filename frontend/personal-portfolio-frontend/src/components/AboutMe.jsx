@@ -15,7 +15,7 @@ const AboutMe = () => {
           React, TailwindCSS, Spring Boot, and MySQL. I recently completed an
           indoor navigation app as part of a summer internship with my college's
           Computer Science department leaders. I currently have a 4.0 GPA and
-          was chosen to represented my college at the SkillsUSA programming
+          was chosen to represent my college at the SkillsUSA programming
           competition.
         </p>
         <p className="my-4 px-4 sm:text-2xl">
@@ -27,10 +27,9 @@ const AboutMe = () => {
           collaborating under a funded NITIC grant.
         </p>
         <p className="mb-4 px-4 sm:text-2xl">
-          I'm currently seeking a software engineering job where I can use my
-          current experience and leadership skills to keep pushing my limits,
-          learn from experienced engineers, and become the best developer I can
-          be.
+          I'm currently seeking a software engineering role where I can apply my
+          experience and leadership skills, continue growing through hands-on
+          work, and become the best developer I can be.
         </p>
       </div>
       <div className="flex justify-center items-center lg:flex-1">
