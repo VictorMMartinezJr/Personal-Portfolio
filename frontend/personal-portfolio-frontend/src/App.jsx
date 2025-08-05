@@ -9,7 +9,7 @@ import StarsBackground from "./components/StarsBackground";
 
 function App() {
   return (
-    <main className="bg-black w-full h-auto text-white flex flex-col justify-between items-center overflow-x-hidden relative">
+    <main className="bg-black w-full h-auto text-white flex flex-col justify-between items-center overflow-hidden relative">
       <StarsBackground />
       <Spotlight position={"0%"} />
       <Spotlight position={"80%"} rotate={"15deg"} />

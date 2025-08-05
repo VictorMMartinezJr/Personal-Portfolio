@@ -7,7 +7,7 @@ const Project = ({ skills, description, imgSrc }) => {
 
   return (
     <motion.div
-      className="flex flex-col justify-center items-center text-center bg-black rounded-lg mb-4 border-2 border-purple-700 shadow-[0_0_30px_rgba(168,85,247,0.6)] shadow-purple-700"
+      className="flex flex-col justify-center items-center text-center bg-black rounded-lg mb-4 border-2 border-purple-700 shadow-[0_0_20px_rgba(168,85,247,0.6)] shadow-purple-700"
       ref={projectRef}
       initial={{ opacity: 0, y: 50 }}
       animate={{
