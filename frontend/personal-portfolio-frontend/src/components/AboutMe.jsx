@@ -1,15 +1,14 @@
 import AboutMeSVG from "./AboutMeSVG";
+import SectionTitle from "./SectionTitle";
 
 const AboutMe = () => {
   return (
     <div
       id="about"
-      className="h-auto flex flex-col justify-center items-center px-4 lg:flex-row lg:text-left lg:px-8 xl:px-12 2xl:px-16"
+      className="h-auto flex flex-col justify-center items-center px-4 xl:flex-row xl:text-left xl:px-12 2xl:px-16"
     >
       <div className="flex flex-col justify-center items-center text-center lg:flex-1">
-        <h1 className="font-bold text-3xl text-purple-500 sm:text-6xl 2xl:text-8xl">
-          About Me
-        </h1>
+        <SectionTitle title="About Me" />
         <p className="mt-4 px-4 sm:text-2xl">
           I'm Victor, a full-stack developer skilled in HTML, CSS, JavaScript,
           React, TailwindCSS, Spring Boot, and MySQL. I recently completed an

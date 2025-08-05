@@ -8,6 +8,7 @@ import springboot from "../assets/springboot.svg";
 import mysql from "../assets/mysql.svg";
 import { useRef } from "react";
 import tailwindcss from "../assets/tailwindcss.svg";
+import SectionTitle from "./SectionTitle";
 
 const Skills = () => {
   const skillsRef = useRef(null);
@@ -19,9 +20,7 @@ const Skills = () => {
       className="h-auto w-full flex flex-col justify-center items-center px-4 overflow-hidden my-12 sm:my-20  lg:px-8 xl:px-12 2xl:px-16"
     >
       <div className="flex flex-col justify-center items-center text-center lg:flex-1">
-        <h1 className="font-bold text-3xl text-purple-500 sm:text-6xl 2xl:text-8xl">
-          Skills
-        </h1>
+        <SectionTitle title="Skills" />
         <p className="my-4 px-4 sm:text-2xl">
           I specialize in <i>full-stack development</i> with a strong foundation
           in both front-end and back-end technologies. Here's a snapshot of the
