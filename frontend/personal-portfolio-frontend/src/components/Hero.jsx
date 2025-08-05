@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import WelcomeSVG from "./WelcomeSVG";
 import { assets } from "../assets/assets";
+import { FaGithubAlt } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
 
 const Hero = () => {
   return (
@@ -71,30 +72,26 @@ const Hero = () => {
         </div>
 
         {/* Icons */}
-        <div className="flex">
-          <a href="#" title="LinkedIn">
-            <motion.img
-              src={assets.linkedin}
-              alt="Linkedin icon"
-              className="w-7 h-7 transform transition-transform duration-200 hover:scale-150 mr-4"
-              initial={{ scale: 0 }}
-              animate={{
-                scale: 1,
-              }}
-              transition={{ duration: 0.5, ease: "easeInOut", delay: 1.4 }}
-            />
+        <div className="flex gap-2 xl:gap-4">
+          <a
+            href="#"
+            title="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my LinkedIn profile"
+            className="cursor-pointer"
+          >
+            <CiLinkedin className="w-7 h-7 transform transition-transform duration-200 hover:scale-150 sm:w-9 sm:h-9 xl:w-11 xl:h-11" />
           </a>
-          <a href="#" title="Github">
-            <motion.img
-              src={assets.github}
-              alt="Linkedin icon"
-              className="w-7 h-7 transform transition-transform duration-200 hover:scale-150"
-              initial={{ scale: 0 }}
-              animate={{
-                scale: 1,
-              }}
-              transition={{ duration: 0.5, ease: "easeInOut", delay: 1.5 }}
-            />
+          <a
+            href="https://github.com/VictorMMartinezJr"
+            title="Github"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my GitHub profile"
+            className="cursor-pointer"
+          >
+            <FaGithubAlt className="w-7 h-7 transform transition-transform duration-200 hover:scale-150 sm:w-9 sm:h-9 xl:w-11 xl:h-11" />
           </a>
         </div>
       </div>

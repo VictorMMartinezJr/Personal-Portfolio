@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { assets } from "../assets/assets";
 
@@ -134,31 +134,15 @@ const Nav = () => {
       </ul>
 
       {/* Icons & Button */}
-      <ul className="hidden md:flex justify-end items-center gap-4 text-lg font-semibold flex-1">
-        <li>
-          <a href="#">
-            <img
-              src={assets.linkedin}
-              alt="Linkedin icon"
-              className="w-4 h-4 md:w-7 md:h-7 transform transition-transform duration-200 hover:scale-150"
-            />
+      <div className="hidden md:flex md:justify-end md:items-center md:gap-2 md:text-lg md:font-semibold md:flex-1 xl:gap-4">
+        <div className="p-0.5 bg-gradient-to-r from-white via-purple-700 to-pink-500 rounded-xl">
+          <a href="#contact" title="Lets Chat">
+            <button className="border-2 border-blue-600 px-4 py-2 rounded-xl cursor-pointer bg-black text-white transform transition-transform duration-200 hover:scale-105 sm:text-xl">
+              Lets Chat
+            </button>
           </a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src={assets.github}
-              alt="Github icon"
-              className="w-4 h-4 md:w-7 md:h-7 transform transition-transform duration-200 hover:scale-150"
-            />
-          </a>
-        </li>
-        <li>
-          <button className="bg-purple-500 px-4 py-2 rounded-xl cursor-pointer transform transition-transform duration-200 hover:scale-105">
-            Lets Chat!
-          </button>
-        </li>
-      </ul>
+        </div>
+      </div>
     </motion.nav>
   );
 };

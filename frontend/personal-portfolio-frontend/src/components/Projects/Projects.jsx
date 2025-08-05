@@ -13,6 +13,7 @@ const Projects = () => {
           skills={projectsData.navAid.skills}
           description={projectsData.navAid.description}
           imgSrc={projectsData.navAid.imgSrc}
+          demoLink={projectsData.navAid.demoLink}
         />
         <Project
           skills={projectsData.navAid.skills}
