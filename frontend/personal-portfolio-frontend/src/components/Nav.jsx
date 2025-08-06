@@ -14,7 +14,7 @@ const Nav = () => {
       className="nav relative h-[8vh] flex items-center w-full px-2 lg:px-8 xl:px-12 2xl:px-16"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 1, ease: "easeInOut" }}
+      transition={{ duration: 1, delay: 1, ease: "easeInOut" }}
     >
       <div className="flex items-center gap-2 flex-1">
         <p className="hidden sm:block sm:font-semibold sm:text-xl">Victor</p>

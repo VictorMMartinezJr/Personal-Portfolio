@@ -24,7 +24,6 @@ function App() {
       />
       <StarsBackground />
       <Spotlight position={"0%"} />
-      <Spotlight position={"80%"} rotate={"15deg"} />
 
       <Nav />
       <Hero />

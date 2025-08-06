@@ -13,9 +13,10 @@ const StarsBackground = () => {
     const top = Math.random() * 100;
     const left = Math.random() * 100;
     const size = getRandomInt(STAR_MIN_SIZE, STAR_MAX_SIZE);
-    const duration = Math.random() * 2 + 1; // 1s to 3s
-    const delay = Math.random() * 3; // 0s to 3s
+    const duration = Math.random() * 2 + 1;
+    const delay = Math.random() * 3;
     return (
+      // Star
       <div
         key={i}
         className="absolute rounded-full bg-white opacity-80"
@@ -37,7 +38,7 @@ const StarsBackground = () => {
       className="fixed top-0 left-0 w-full"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
     >
       <style>{`
         @keyframes twinkle {
