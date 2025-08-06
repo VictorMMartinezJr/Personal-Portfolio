@@ -11,7 +11,10 @@ import StarsBackground from "./components/StarsBackground";
 
 function App() {
   return (
-    <main className="bg-black w-full h-auto text-white flex flex-col justify-between items-center overflow-hidden relative">
+    <main
+      id="main"
+      className="bg-black w-full h-auto text-white flex flex-col justify-between items-center overflow-hidden relative"
+    >
       <ToastContainer
         position="top-right"
         autoClose={3000}

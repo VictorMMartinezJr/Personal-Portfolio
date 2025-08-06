@@ -11,7 +11,7 @@ const Nav = () => {
 
   return (
     <motion.nav
-      className="relative h-[8vh] flex items-center w-full px-2 lg:px-8 xl:px-12 2xl:px-16"
+      className="nav relative h-[8vh] flex items-center w-full px-2 lg:px-8 xl:px-12 2xl:px-16"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
@@ -71,19 +71,44 @@ const Nav = () => {
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <li onClick={handleClick}>
-              <a href="#home">Home</a>
+              <a
+                href="#home"
+                className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-purple-500 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
+              >
+                Home
+              </a>
             </li>
             <li onClick={handleClick}>
-              <a href="#about">About</a>
+              <a
+                href="#about"
+                className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-purple-500 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
+              >
+                About
+              </a>
             </li>
             <li onClick={handleClick}>
-              <a href="#skills">Skills</a>
+              <a
+                href="#skills"
+                className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-purple-500 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
+              >
+                Skills
+              </a>
             </li>
             <li onClick={handleClick}>
-              <a href="#projects">Projects</a>
+              <a
+                href="#projects"
+                className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-purple-500 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
+              >
+                Projects
+              </a>
             </li>
             <li onClick={handleClick}>
-              <a href="#contact">Contact</a>
+              <a
+                href="#contact"
+                className="relative before:content-[''] before:absolute before:w-0 before:h-1 before:bg-purple-500 before:-bottom-1 before:left-0 before:transition-all hover:before:w-full"
+              >
+                Contact
+              </a>
             </li>
           </motion.ul>
         )}
@@ -135,9 +160,9 @@ const Nav = () => {
 
       {/* Icons & Button */}
       <div className="hidden md:flex md:justify-end md:items-center md:gap-2 md:text-lg md:font-semibold md:flex-1 xl:gap-4">
-        <div className="p-0.5 bg-gradient-to-r from-white via-purple-700 to-pink-500 rounded-xl">
+        <div className="p-0.5 bg-gradient-to-r from-white via-purple-700 to-pink-500 rounded-lg">
           <a href="#contact" title="Lets Chat">
-            <button className="border-2 border-blue-600 px-4 py-2 rounded-xl cursor-pointer bg-black text-white transform transition-transform duration-200 hover:scale-105 sm:text-xl">
+            <button className="border-2 border-blue-600 px-4 py-2 rounded-lg cursor-pointer bg-black text-white transform transition-transform duration-200 hover:scale-105 sm:text-xl">
               Lets Chat
             </button>
           </a>

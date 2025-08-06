@@ -5,11 +5,11 @@ const AboutMe = () => {
   return (
     <div
       id="about"
-      className="h-auto flex flex-col justify-center items-center px-4 xl:flex-row xl:text-left xl:px-12 2xl:px-16"
+      className="h-auto flex flex-col justify-center items-center px-4 mt-12 xl:flex-row xl:text-left xl:px-12 2xl:px-16"
     >
       <div className="flex flex-col justify-center items-center text-center lg:flex-1">
         <SectionTitle title="About Me" />
-        <p className="mt-4 px-4 sm:text-2xl">
+        <p className="mt-4 px-4 text-lg sm:text-2xl">
           I'm Victor, a full-stack developer skilled in HTML, CSS, JavaScript,
           React, TailwindCSS, Spring Boot, and MySQL. I recently completed an
           indoor navigation app as part of a summer internship with my college's
@@ -17,7 +17,7 @@ const AboutMe = () => {
           was chosen to represent my college at the SkillsUSA programming
           competition.
         </p>
-        <p className="my-4 px-4 sm:text-2xl">
+        <p className="my-4 px-4 text-lg sm:text-2xl">
           After completing the navigation app, I was invited to become a
           founding member and team leader of a new innovation-driven student
           club. I'm excited about the vision for the student club and the chance
@@ -25,7 +25,7 @@ const AboutMe = () => {
           — especially with the added potential of integrating AI and
           collaborating under a funded NITIC grant.
         </p>
-        <p className="mb-4 px-4 sm:text-2xl">
+        <p className="mb-4 px-4 text-lg sm:text-2xl">
           I'm currently seeking a software engineering role where I can apply my
           experience and leadership skills, continue growing through hands-on
           work, and become the best developer I can be.

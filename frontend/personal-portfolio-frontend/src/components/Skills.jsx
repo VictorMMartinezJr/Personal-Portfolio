@@ -17,11 +17,11 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="h-auto w-full flex flex-col justify-center items-center px-4 overflow-hidden my-12 sm:my-20  lg:px-8 xl:px-12 2xl:px-16"
+      className="h-auto w-full flex flex-col justify-center items-center px-4 overflow-hidden mt-12 sm:my-20 lg:px-8 xl:px-12 2xl:px-16"
     >
       <div className="flex flex-col justify-center items-center text-center lg:flex-1">
         <SectionTitle title="Skills" />
-        <p className="my-4 px-4 sm:text-2xl">
+        <p className="my-4 px-4 text-lg sm:text-2xl">
           I specialize in <i>full-stack development</i> with a strong foundation
           in both front-end and back-end technologies. Here's a snapshot of the
           tools and languages I use:
@@ -53,7 +53,7 @@ const Skills = () => {
         </p>
       </div>
       <ul
-        className="grid grid-cols-4 grid-rows-2 gap-4 justify-center items-center xl:grid-cols-8 xl:grid-rows-1 w-full"
+        className="grid grid-cols-3 gap-4 justify-center items-center md:grid-cols-4 xl:grid-cols-8 xl:grid-rows-1 w-full"
         ref={skillsRef}
         aria-label="Skills logos"
       >

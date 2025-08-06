@@ -23,12 +23,15 @@ const Project = ({ skills, description, imgSrc, GHLink, demoLink }) => {
       {/* Tech used */}
       <div className="flex flex-wrap justify-center items-center gap-2">
         {skills.map((skill, i) => (
-          <span key={i} className="border-2 border-purple-700 rounded-md px-2">
+          <span
+            key={i}
+            className="border-2 border-purple-700 rounded-md px-2 text-lg "
+          >
             {skill}
           </span>
         ))}
       </div>
-      <p className="px-4 my-4 md:text-xl">{description}</p>
+      <p className="px-4 my-4 text-lg  md:text-xl">{description}</p>
       <img src={imgSrc} alt="" className="px-4" />
 
       {/* Icons */}

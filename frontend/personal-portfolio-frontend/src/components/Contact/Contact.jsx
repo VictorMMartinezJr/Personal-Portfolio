@@ -49,7 +49,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="h-auto w-full flex flex-col justify-center items-center mb-4 px-4 lg:max-w-[60%]"
+      className="h-auto w-full flex flex-col justify-center items-center my-12 px-4 lg:max-w-[60%]"
     >
       <SectionTitle title="Lets Chat!" />
 
@@ -65,7 +65,7 @@ const Contact = () => {
             onChange={(e) => setName(e.target.value)}
             onFocus={() => setIsNameFocused(true)}
             onBlur={() => setIsNameFocused(false)}
-            className="h-full w-full px-2 py-3 border-4 top-8 border-purple-700 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="h-full w-full px-2 py-3 border-4 top-8 border-purple-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.6)]"
             required
           />
         </div>
@@ -80,7 +80,7 @@ const Contact = () => {
             onChange={(e) => setEmail(e.target.value)}
             onFocus={() => setIsEmailFocused(true)}
             onBlur={() => setIsEmailFocused(false)}
-            className="h-full w-full px-2 py-3 border-4 top-8 border-purple-700 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="h-full w-full px-2 py-3 border-4 border-purple-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.6)]"
             required
           />
         </div>
@@ -96,7 +96,7 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
             onFocus={() => setIsMessageFocused(true)}
             onBlur={() => setIsMessageFocused(false)}
-            className="h-full w-full px-2 border-4 top-8 border-purple-700 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="h-full w-full px-2 border-4 border-purple-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.6)]"
             required
           />
         </div>
@@ -106,7 +106,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={loading}
-            className="bg-purple-700 border-2 border-purple-700 px-4 py-2 rounded-xl cursor-pointer text-white transform transition-transform duration-200 hover:scale-105 sm:text-xl"
+            className="bg-purple-700 border-2 border-purple-700 px-4 py-2 rounded-lg cursor-pointer text-white transform transition-transform duration-200 hover:scale-105 shadow-[0_0_20px_rgba(168,85,247,0.6)] sm:text-xl"
           >
             {result}
           </button>
