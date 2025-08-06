@@ -3,6 +3,7 @@ import WelcomeSVG from "./WelcomeSVG";
 import { assets } from "../assets/assets";
 import { FaGithubAlt } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import { toast } from "react-toastify";
 
 const Hero = () => {
   return (

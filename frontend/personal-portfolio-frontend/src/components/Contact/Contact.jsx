@@ -1,8 +1,11 @@
 import { useState } from "react";
 import SectionTitle from "../SectionTitle";
 import FloatingLabel from "./FloatingLabel";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+  const [result, setResult] = useState("Send Message");
+  const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -13,8 +16,34 @@ const Contact = () => {
   const emailFloating = isEmailFocused || email.length > 0;
   const messageFloating = isMessageFocused || message.length > 0;
 
-  const handleSubmit = (e) => {
+  const clearForm = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+    setIsNameFocused(false);
+    setIsEmailFocused(false);
+    setIsMessageFocused(false);
+    setLoading(false);
+    setResult("Send Message");
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setResult("Sending....");
+    const formData = new FormData(e.target);
+    formData.append("access_key", "f4005b2d-f86c-46dd-9913-4f64e0fbde48");
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+    const data = await response.json();
+    if (data.success) {
+      toast("🚀 Message Recieved!");
+    } else {
+      toast("❌ Failed! Please try again.");
+    }
+    clearForm();
   };
 
   return (
@@ -25,12 +54,13 @@ const Contact = () => {
       <SectionTitle title="Lets Chat!" />
 
       {/* Form */}
-      <form className="w-full flex flex-col gap-8">
+      <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8">
         {/* Name */}
         <div className="flex flex-col items-center px-4 relative">
           <FloatingLabel labelText="Name" floating={nameFloating} />
           <input
             type="text"
+            name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             onFocus={() => setIsNameFocused(true)}
@@ -45,6 +75,7 @@ const Contact = () => {
           <FloatingLabel labelText="Email" floating={emailFloating} />
           <input
             type="email"
+            name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             onFocus={() => setIsEmailFocused(true)}
@@ -60,6 +91,7 @@ const Contact = () => {
           <textarea
             rows={10}
             type="text"
+            name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             onFocus={() => setIsMessageFocused(true)}
@@ -72,10 +104,11 @@ const Contact = () => {
         {/* Submit Button */}
         <div className="px-4 rounded-xl ">
           <button
-            onSubmit={handleSubmit}
+            type="submit"
+            disabled={loading}
             className="bg-purple-700 border-2 border-purple-700 px-4 py-2 rounded-xl cursor-pointer text-white transform transition-transform duration-200 hover:scale-105 sm:text-xl"
           >
-            Send Message
+            {result}
           </button>
         </div>
       </form>
