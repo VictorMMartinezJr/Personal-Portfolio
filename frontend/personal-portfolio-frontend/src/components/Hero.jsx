@@ -45,30 +45,34 @@ const Hero = () => {
         <div className="flex gap-4">
           <motion.div
             initial={{ scale: 0 }}
-            animate={{
-              scale: 1,
-            }}
+            animate={{ scale: 1 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 1.3 }}
           >
-            <div className="p-0.5 rounded-xl">
-              <button className="bg-purple-700 border-2 border-purple-700 px-4 py-2 rounded-lg cursor-pointer text-white transform transition-transform duration-200 hover:scale-105 shadow-[0_0_20px_rgba(168,85,247,0.6)] text-sm sm:text-xl">
-                View My Work
-              </button>
-            </div>
+            <a
+              href="#projects"
+              title="Projects"
+              aria-label="Go to projects section"
+              className="inline-block bg-purple-700 border-2 border-purple-700 px-4 py-2 rounded-lg cursor-pointer text-white transform transition-transform duration-200 hover:scale-105 shadow-[0_0_20px_rgba(168,85,247,0.6)] text-sm sm:text-xl"
+            >
+              View My Work
+            </a>
           </motion.div>
 
           <motion.div
             initial={{ scale: 0 }}
-            animate={{
-              scale: 1,
-            }}
+            animate={{ scale: 1 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 1.4 }}
           >
-            <div className="p-0.5 bg-gradient-to-r from-white via-purple-700 to-pink-500 rounded-lg">
-              <button className="border-2 border-blue-600 px-4 py-2 rounded-lg cursor-pointer bg-black text-white transform transition-transform duration-200 hover:scale-105 text-sm sm:text-xl">
+            <a
+              href="#contact"
+              title="Contact"
+              aria-label="Go to contact form"
+              className="relative inline-block rounded-lg p-[2px] bg-gradient-to-r from-white via-purple-700 to-pink-500 hover:scale-105 transform transition-transform duration-200"
+            >
+              <span className="block bg-black rounded-md px-4 py-2 text-white text-sm sm:text-xl">
                 Get In Touch
-              </button>
-            </div>
+              </span>
+            </a>
           </motion.div>
         </div>
 

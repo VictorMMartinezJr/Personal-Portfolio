@@ -160,13 +160,16 @@ const Nav = () => {
 
       {/* Icons & Button */}
       <div className="hidden md:flex md:justify-end md:items-center md:gap-2 md:text-lg md:font-semibold md:flex-1 xl:gap-4">
-        <div className="p-0.5 bg-gradient-to-r from-white via-purple-700 to-pink-500 rounded-lg">
-          <a href="#contact" title="Lets Chat">
-            <button className="border-2 border-blue-600 px-4 py-2 rounded-lg cursor-pointer bg-black text-white transform transition-transform duration-200 hover:scale-105 sm:text-xl">
-              Lets Chat
-            </button>
-          </a>
-        </div>
+        <a
+          href="#contact"
+          title="Contact"
+          aria-label="Go to contact form"
+          className="relative inline-block rounded-lg p-[2px] bg-gradient-to-r from-white via-purple-700 to-pink-500 hover:scale-105 transform transition-transform duration-200"
+        >
+          <span className="block bg-black rounded-md px-4 py-2 text-white text-sm sm:text-xl">
+            Get In Touch
+          </span>
+        </a>
       </div>
     </motion.nav>
   );

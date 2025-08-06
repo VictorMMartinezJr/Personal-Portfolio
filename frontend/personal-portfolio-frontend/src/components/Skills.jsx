@@ -44,12 +44,8 @@ const Skills = () => {
           <span className="font-semibold mt-2 inline-block sm:mt-4 lg:mt-6">
             Version Control & Tools:
           </span>{" "}
-          Git, GitHub, Netlify
+          Git, GitHub, Netlify, Framer-Motion
           <br />
-          <span className="font-semibold mt-2 inline-block sm:mt-4 lg:mt-6">
-            Other:
-          </span>{" "}
-          REST APIs, Responsive Design, Framer Motion, UI/UX principles.
         </p>
       </div>
       <ul

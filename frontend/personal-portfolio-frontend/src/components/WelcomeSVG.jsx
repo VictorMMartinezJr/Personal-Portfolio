@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 const WelcomeSVG = () => {
   return (
     <motion.svg
-      className="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px]"
+      className="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] xl:w-[400px] xl:h-[400px]"
       viewBox="0 0 50 50"
       fill="none"
       initial={{ scale: 0 }}

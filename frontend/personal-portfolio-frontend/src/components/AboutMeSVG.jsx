@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const AboutMeSVG = () => {
   return (
     <svg
-      className="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] 2xl:w-[350px] 2xl:h-[350px]"
+      className="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] xl:w-[500px] xl:h-[500px]"
       viewBox="0 0 37 65"
       fill="none"
     >
