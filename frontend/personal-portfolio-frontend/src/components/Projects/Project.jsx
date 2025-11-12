@@ -9,7 +9,7 @@ const Project = ({ skills, description, imgSrc, GHLink, demoLink }) => {
 
   return (
     <motion.div
-      className="flex flex-col justify-center items-center text-center bg-black rounded-lg mb-4 border-2 border-purple-700 shadow-[0_0_20px_rgba(168,85,247,0.6)]"
+      className="flex flex-col justify-center items-center text-center bg-black rounded-lg mb-4 border-2 border-white shadow-[0_0_35px_rgba(168,85,247,0.5)]"
       ref={projectRef}
       initial={{ opacity: 0, y: 50 }}
       animate={{
@@ -25,7 +25,7 @@ const Project = ({ skills, description, imgSrc, GHLink, demoLink }) => {
         {skills.map((skill, i) => (
           <span
             key={i}
-            className="border-2 border-purple-700 rounded-md px-2 text-lg "
+            className="border-2 border-[#9d9d9d] rounded-md px-2 text-lg "
           >
             {skill}
           </span>

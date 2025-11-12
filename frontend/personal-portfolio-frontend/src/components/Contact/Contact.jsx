@@ -65,7 +65,7 @@ const Contact = () => {
             onChange={(e) => setName(e.target.value)}
             onFocus={() => setIsNameFocused(true)}
             onBlur={() => setIsNameFocused(false)}
-            className="h-full w-full px-2 py-3 border-4 top-8 border-purple-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.6)]"
+            className="h-full w-full px-2 py-3 border-4 top-8 border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white shadow-[0_0_35px_rgba(168,85,247,0.5)]"
             required
           />
         </div>
@@ -80,7 +80,7 @@ const Contact = () => {
             onChange={(e) => setEmail(e.target.value)}
             onFocus={() => setIsEmailFocused(true)}
             onBlur={() => setIsEmailFocused(false)}
-            className="h-full w-full px-2 py-3 border-4 border-purple-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.6)]"
+            className="h-full w-full px-2 py-3 border-4 border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white shadow-[0_0_35px_rgba(168,85,247,0.5)]"
             required
           />
         </div>
@@ -96,7 +96,7 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
             onFocus={() => setIsMessageFocused(true)}
             onBlur={() => setIsMessageFocused(false)}
-            className="h-full w-full px-2 border-4 border-purple-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.6)]"
+            className="h-full w-full px-2 border-4 border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white shadow-[0_0_35px_rgba(168,85,247,0.5)]"
             required
           />
         </div>
@@ -106,7 +106,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={loading}
-            className="bg-purple-700 border-2 border-purple-700 px-4 py-2 rounded-lg cursor-pointer text-white transform transition-transform duration-200 hover:scale-105 shadow-[0_0_20px_rgba(168,85,247,0.6)] sm:text-xl"
+            className="bg-black border-2 border-[#9d9d9d] px-4 py-2 rounded-lg cursor-pointer text-white transform transition-transform duration-200 hover:scale-105 shadow-[0_0_20px_rgba(168,85,247,0.6)] sm:text-xl"
           >
             {result}
           </button>

@@ -1,5 +1,5 @@
-import navLogo from "./nav-logo.png";
+import hero from "./coding.svg";
 
 export const assets = {
-  navLogo,
+  hero,
 };

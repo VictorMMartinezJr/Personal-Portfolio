@@ -13,7 +13,7 @@ function App() {
   return (
     <main
       id="main"
-      className="bg-black w-full h-auto text-white flex flex-col justify-between items-center overflow-hidden relative"
+      className="bg-[#02071a] w-full h-auto text-white flex flex-col justify-between items-center overflow-hidden relative"
     >
       <ToastContainer
         position="top-right"
@@ -23,7 +23,7 @@ function App() {
         progressClassName="!bg-purple-700"
       />
       <StarsBackground />
-      <Spotlight position={"0%"} />
+      {/* <Spotlight position={"0%"} /> */}
 
       <Nav />
       <Hero />
