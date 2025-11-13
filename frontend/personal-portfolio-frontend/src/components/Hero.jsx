@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
-import WelcomeSVG from "./WelcomeSVG";
 import { FaGithubAlt } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
-import { assets } from "../assets/assets";
+import HeroSVG from "./HeroSVG";
 
 const Hero = () => {
   return (
@@ -26,7 +25,7 @@ const Hero = () => {
           transition={{ duration: 0.5, ease: "easeInOut", delay: 1 }}
         >
           {/* Glow behind text */}
-          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60 h-20 rounded-full bg-gradient-to-r from-[#9d9d9d] via-white to-[#9d9d9d] blur-xl opacity-20 z-0 lg:w-[70%]"></span>
+          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60 h-10 rounded-full bg-gradient-to-r from-[#9d9d9d] via-white to-[#9d9d9d] blur-xl opacity-20 z-0 lg:w-[70%]"></span>
           {/* Text on top */}
           Victor Martinez
         </motion.h1>
@@ -124,7 +123,7 @@ const Hero = () => {
 
       {/* Image */}
       <div className="w-full flex justify-center items-center flex-1 overflow-hidden">
-        <WelcomeSVG />
+        <HeroSVG />
       </div>
     </div>
   );

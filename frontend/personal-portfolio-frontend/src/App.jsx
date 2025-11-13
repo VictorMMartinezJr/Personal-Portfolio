@@ -6,7 +6,6 @@ import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills";
-import Spotlight from "./components/Spotlight";
 import StarsBackground from "./components/StarsBackground";
 
 function App() {
@@ -23,8 +22,6 @@ function App() {
         progressClassName="!bg-purple-700"
       />
       <StarsBackground />
-      {/* <Spotlight position={"0%"} /> */}
-
       <Nav />
       <Hero />
       <AboutMe />
