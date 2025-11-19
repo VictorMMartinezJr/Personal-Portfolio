@@ -9,22 +9,16 @@ const Projects = () => {
     >
       <SectionTitle title="Projects" />
       <div className="flex flex-col justify-center items-center md:grid md:grid-cols-2 md:gap-4 xl:grid-cols-3">
-        <Project
-          skills={projectsData.navAid.skills}
-          description={projectsData.navAid.description}
-          imgSrc={projectsData.navAid.imgSrc}
-          demoLink={projectsData.navAid.demoLink}
-        />
-        <Project
-          skills={projectsData.navAid.skills}
-          description={projectsData.navAid.description}
-          imgSrc={projectsData.navAid.imgSrc}
-        />
-        <Project
-          skills={projectsData.navAid.skills}
-          description={projectsData.navAid.description}
-          imgSrc={projectsData.navAid.imgSrc}
-        />
+        {projectsData.map((project) => (
+          <Project
+            name={project.name}
+            skills={project.skills}
+            description={project.description}
+            imgSrc={project.imgSrc}
+            demoLink={project.demoLink}
+            GHLink={project.GitHub}
+          />
+        ))}
       </div>
     </div>
   );

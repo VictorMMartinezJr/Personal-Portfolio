@@ -25,7 +25,7 @@ const Hero = () => {
           transition={{ duration: 0.5, ease: "easeInOut", delay: 1 }}
         >
           {/* Glow behind text */}
-          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60 h-10 rounded-full bg-gradient-to-r from-[#9d9d9d] via-white to-[#9d9d9d] blur-xl opacity-20 z-0 lg:w-[70%]"></span>
+          <motion.span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60 h-10 rounded-full bg-gradient-to-r from-[#9d9d9d] via-white to-[#9d9d9d] blur-xl opacity-20 z-0 lg:w-[70%]"></motion.span>
           {/* Text on top */}
           Victor Martinez
         </motion.h1>
