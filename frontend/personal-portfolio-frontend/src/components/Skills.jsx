@@ -22,29 +22,25 @@ const Skills = () => {
       <div className="flex flex-col justify-center items-center text-center lg:flex-1">
         <SectionTitle title="Skills" />
         <p className="my-4 px-4 text-lg sm:text-2xl">
-          I specialize in <i>full-stack development</i> with a strong foundation
-          in both front-end and back-end technologies. Here's a snapshot of the
-          tools and languages I use:
-          <br />
           <span className="font-semibold mt-2 inline-block sm:mt-4 lg:mt-6">
             Frontend:
           </span>{" "}
-          HTML, CSS, Tailwind CSS, JavaScript, React
+          HTML5, CSS3, Tailwind CSS, JavaScript (ES6+), React, Framer Motion
           <br />
           <span className="font-semibold mt-2 inline-block sm:mt-4 lg:mt-6">
             Backend:
           </span>{" "}
-          Java, Spring Boot
+          Java, JavaFX, Spring Boot, REST APIs, Object-Oriented Programming
           <br />
           <span className="font-semibold mt-2 inline-block sm:mt-4 lg:mt-6">
-            Database:
+            Database & Data:
           </span>{" "}
-          MySQL
+          MySQL, MongoDB
           <br />
           <span className="font-semibold mt-2 inline-block sm:mt-4 lg:mt-6">
-            Version Control & Tools:
+            Tools & Deployment
           </span>{" "}
-          Git, GitHub, Netlify, Framer-Motion
+          Git/GitHub, Docker, Netlify, Railway, Maven, Agile
           <br />
         </p>
       </div>
