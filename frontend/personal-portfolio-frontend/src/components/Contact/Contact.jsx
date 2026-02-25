@@ -47,7 +47,8 @@ const Contact = () => {
   };
 
   return (
-    <div
+    <section
+        aria-label="Contact me"
       id="contact"
       className="h-auto w-full flex flex-col justify-center items-center my-12 px-4 lg:max-w-[60%]"
     >
@@ -112,7 +113,7 @@ const Contact = () => {
           </button>
         </div>
       </form>
-    </div>
+    </section>
   );
 };
 

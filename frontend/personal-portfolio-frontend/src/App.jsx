@@ -4,9 +4,11 @@ import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact/Contact";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
-import Projects from "./components/Projects/Projects";
+import Projects from "./components/Projects/AppProjects.jsx";
 import Skills from "./components/Skills";
 import StarsBackground from "./components/StarsBackground";
+import AppProjects from "./components/Projects/AppProjects.jsx";
+import LandingPages from "./components/Projects/LandingPages.jsx";
 
 function App() {
   return (
@@ -26,7 +28,8 @@ function App() {
       <Hero />
       <AboutMe />
       <Skills />
-      <Projects />
+      <AppProjects />
+      <LandingPages />
       <Contact />
     </main>
   );

@@ -3,7 +3,8 @@ import SectionTitle from "./SectionTitle";
 
 const AboutMe = () => {
   return (
-    <div
+    <section
+        aria-label="About me"
       id="about"
       className="h-auto flex flex-col justify-center items-center px-4 mt-12 xl:flex-row xl:text-left xl:px-12 2xl:px-16"
     >
@@ -34,7 +35,7 @@ const AboutMe = () => {
       <div className="flex justify-center items-center lg:flex-1">
         <AboutMeSVG />
       </div>
-    </div>
+    </section>
   );
 };
 

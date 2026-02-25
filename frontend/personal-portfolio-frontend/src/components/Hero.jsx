@@ -5,7 +5,7 @@ import HeroSVG from "./HeroSVG";
 
 const Hero = () => {
   return (
-    <div className="hero relative h-[92vh] w-full flex flex-col justify-around items-center overflow-hidden px-4 lg:flex-row lg:text-left lg:px-8 xl:px-12 2xl:px-16">
+    <section className="hero relative h-[92vh] w-full flex flex-col justify-around items-center overflow-hidden px-4 lg:flex-row lg:text-left lg:px-8 xl:px-12 2xl:px-16">
       {/* Text */}
       <div className="w-full flex flex-col justify-center items-center gap-6 flex-1 whitespace-nowrap lg:items-start">
         <motion.p
@@ -125,7 +125,7 @@ const Hero = () => {
       <div className="w-full flex justify-center items-center flex-1 overflow-hidden">
         <HeroSVG />
       </div>
-    </div>
+    </section>
   );
 };
 

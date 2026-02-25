@@ -8,7 +8,7 @@ const Project = ({ name, skills, description, imgSrc, GHLink, demoLink }) => {
   const isProjectInView = useInView(projectRef, { once: true });
 
   return (
-    <motion.div
+    <motion.section
       className="flex flex-col justify-center items-center min-h-[950px] text-center bg-black rounded-lg mb-4 border-2 border-white shadow-[0_0_35px_rgba(168,85,247,0.5)]"
       ref={projectRef}
       initial={{ opacity: 0, y: 50 }}
@@ -75,7 +75,7 @@ const Project = ({ name, skills, description, imgSrc, GHLink, demoLink }) => {
           </motion.div>
         </a>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

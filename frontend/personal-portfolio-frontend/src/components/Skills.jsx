@@ -15,7 +15,8 @@ const Skills = () => {
   const isInView = useInView(skillsRef, { once: true });
 
   return (
-    <div
+    <section
+        aria-label="My skills"
       id="skills"
       className="h-auto w-full flex flex-col justify-center items-center px-4 overflow-hidden mt-12 sm:my-20 lg:px-8 xl:px-12 2xl:px-16"
     >
@@ -138,7 +139,7 @@ const Skills = () => {
           />
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
 
