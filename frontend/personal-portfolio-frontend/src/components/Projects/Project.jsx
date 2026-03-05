@@ -3,13 +3,21 @@ import { useRef } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithubAlt } from "react-icons/fa";
 
-const Project = ({ name, skills, description, imgSrc, GHLink, demoLink }) => {
+const Project = ({
+  name,
+  skills,
+  description,
+  disclaimer,
+  imgSrc,
+  GHLink,
+  demoLink,
+}) => {
   const projectRef = useRef(null);
   const isProjectInView = useInView(projectRef, { once: true });
 
   return (
     <motion.section
-      className="flex flex-col justify-center items-center min-h-[950px] text-center bg-black rounded-lg mb-4 border-2 border-white shadow-[0_0_35px_rgba(168,85,247,0.5)]"
+      className="flex flex-col justify-center items-center min-h-[1100px] text-center bg-black rounded-lg mb-4 border-2 border-white shadow-[0_0_35px_rgba(168,85,247,0.5)]"
       ref={projectRef}
       initial={{ opacity: 0, y: 50 }}
       animate={{
@@ -19,7 +27,6 @@ const Project = ({ name, skills, description, imgSrc, GHLink, demoLink }) => {
       transition={{ duration: 0.5, ease: "easeInOut" }}
     >
       <h2 className="my-4 font-bold italic text-xl xl:text-2xl">{name}</h2>
-
       {/* Tech used */}
       <div className="flex flex-wrap justify-center items-center gap-2">
         {skills.map((skill, i) => (
@@ -32,8 +39,15 @@ const Project = ({ name, skills, description, imgSrc, GHLink, demoLink }) => {
         ))}
       </div>
       <p className="px-4 my-4 text-lg flex-1 md:text-xl">{description}</p>
-      <img src={imgSrc} alt="" className="px-4" />
 
+      {disclaimer && (
+        <>
+      <hr className="my-2 border-gray-700" /> 
+      <p className="text-xs text-yellow-500 italic px-4">{disclaimer}</p>
+      </>
+      )}
+
+      <img src={imgSrc} alt="" className="px-4" />
       {/* Icons */}
       <div className="w-full flex justify-start my-4 px-4">
         <a

@@ -20,6 +20,8 @@ const appsData = [
     imgSrc: echosphere,
     description:
       "A full-stack music streaming web app built with React, TailwindCSS, Spring Boot, and MongoDB. Users can browse songs, play music, create accounts, and enjoy a clean, responsive UI. Includes secure JWT authentication, dynamic routing, and real-time audio playback. Features a full Admin Dashboard where authorized users can upload new tracks, edit metadata, and manage the entire music catalog.",
+    disclaimer:
+      "🚀 Note: This application is hosted on a free-tier cloud instance. Please allow 45-60 seconds for the server to 'spin up' on your first visit. Thank you for your patience!",
     GitHub: "https://github.com/VictorMMartinezJr/EchoSphere",
     demoLink: "https://echosphere-user.netlify.app",
   },
@@ -40,6 +42,8 @@ const appsData = [
     imgSrc: nexa,
     description:
       "A full-stack cloud-native e-commerce platform built with React, Tailwind CSS, Spring Boot, and MySQL. Architected with a strictly typed relational schema hosted on Aiven Cloud, Nexa provides a high-performance retail experience with real-time inventory tracking and dynamic category filtering. Features secure JWT authentication for user sessions and a robust backend logic for managing complex product variants. Deployed using a decoupled architecture on Render and Netlify, ensuring 100% data integrity and scalable asset management via Cloudinary.",
+    disclaimer:
+      "🚀 Note: This application is hosted on a free-tier cloud instance. Please allow 45-60 seconds for the server to 'spin up' on your first visit. Thank you for your patience!",
     GitHub: "https://github.com/VictorMMartinezJr/Nexa",
     demoLink: "https://nexaapparel.netlify.app",
   },
@@ -77,7 +81,7 @@ const landingPagesData = [
     imgSrc: luxureDetails,
     description:
       "A landing page for a luxury car detailing brand. Fully responsive for all devices and optimized images.",
-    GitHub: "",
+    GitHub: "https://github.com/VictorMMartinezJr/LuxureDetails",
     demoLink: "https://luxuredetails-v1.netlify.app",
   },
 ];
