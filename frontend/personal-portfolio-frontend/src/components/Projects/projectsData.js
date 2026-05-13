@@ -1,6 +1,7 @@
 import navaid from "../../assets/navaid.png";
 import echosphere from "../../assets/echosphere.png";
 import luxureDetails from "../../assets/luxuredetails.png";
+import virtualR from "../../assets/virtualR.png";
 import nexa from "../../assets/nexa.png";
 
 const appsData = [
@@ -83,6 +84,24 @@ const landingPagesData = [
       "A landing page for a luxury car detailing brand. Fully responsive for all devices and optimized images.",
     GitHub: "https://github.com/VictorMMartinezJr/LuxureDetails",
     demoLink: "https://luxuredetails-v1.netlify.app",
+  },
+  {
+    name: "VirtualR",
+    skills: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Typescript",
+      "React",
+      "TailwindCSS",
+      "Responsive UI",
+      "Netlify",
+    ],
+    imgSrc: virtualR,
+    description:
+      "A landing page for a company offering virtual reality solutions. Fully responsive for all devices and optimized images.\n\nVirtualR is a comprehensive suite of intuitive development tools designed to bridge the gap between imagination and immersive reality.",
+    GitHub: "https://github.com/VictorMMartinezJr/VirtualR",
+    demoLink: "https://virtualr-v1.netlify.app/",
   },
 ];
 
