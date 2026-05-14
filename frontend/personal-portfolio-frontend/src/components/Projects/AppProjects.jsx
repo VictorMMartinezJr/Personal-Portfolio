@@ -30,6 +30,7 @@ const AppProjects = () => {
               imgSrc={imgSrc}
               demoLink={demoLink}
               GHLink={GitHub}
+              className="md:min-h-[1200px]"
             />
           ),
         )}

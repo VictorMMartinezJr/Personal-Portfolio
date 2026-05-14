@@ -18,7 +18,7 @@ const Project = ({
 
   return (
     <motion.div
-      className={`flex flex-col justify-center items-center text-center bg-black rounded-lg mb-4 border-2 border-blue-700 shadow-[0_0_35px_rgba(168,85,247,0.5)] ${className || "md:min-h-[1200px]"}`}
+      className={`flex flex-col justify-center items-center text-center bg-black rounded-lg mb-4 border-2 border-blue-700 shadow-[0_0_35px_rgba(168,85,247,0.5)] ${className}`}
       ref={projectRef}
       initial={{ opacity: 0, y: 50 }}
       animate={{

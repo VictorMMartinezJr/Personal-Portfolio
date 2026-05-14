@@ -1,6 +1,5 @@
-import React from "react";
 import SectionTitle from "../SectionTitle.jsx";
-import { appsData, landingPagesData } from "./projectsData.js";
+import { landingPagesData } from "./projectsData.js";
 import Project from "./Project.jsx";
 
 const LandingPages = () => {
@@ -22,7 +21,7 @@ const LandingPages = () => {
               imgSrc={imgSrc}
               demoLink={demoLink}
               GHLink={GitHub}
-              className="min-h-[1000px]"
+              className="md:min-h-[850px]"
             />
           ),
         )}
