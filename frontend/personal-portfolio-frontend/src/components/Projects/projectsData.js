@@ -69,6 +69,23 @@ const appsData = [
 
 const landingPagesData = [
   {
+    name: "VirtualR",
+    skills: [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "React",
+      "TailwindCSS",
+      "Responsive UI",
+      "Netlify",
+    ],
+    imgSrc: virtualR,
+    description:
+      "A landing page for a company offering virtual reality solutions. Fully responsive for all devices and optimized images.\n\nVirtualR is a comprehensive suite of intuitive development tools designed to bridge the gap between imagination and immersive reality.",
+    GitHub: "https://github.com/VictorMMartinezJr/VirtualR",
+    demoLink: "https://virtualr-v1.netlify.app/",
+  },
+  {
     name: "Luxure Details",
     skills: [
       "HTML",
@@ -84,24 +101,6 @@ const landingPagesData = [
       "A landing page for a luxury car detailing brand. Fully responsive for all devices and optimized images.",
     GitHub: "https://github.com/VictorMMartinezJr/LuxureDetails",
     demoLink: "https://luxuredetails-v1.netlify.app",
-  },
-  {
-    name: "VirtualR",
-    skills: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Typescript",
-      "React",
-      "TailwindCSS",
-      "Responsive UI",
-      "Netlify",
-    ],
-    imgSrc: virtualR,
-    description:
-      "A landing page for a company offering virtual reality solutions. Fully responsive for all devices and optimized images.\n\nVirtualR is a comprehensive suite of intuitive development tools designed to bridge the gap between imagination and immersive reality.",
-    GitHub: "https://github.com/VictorMMartinezJr/VirtualR",
-    demoLink: "https://virtualr-v1.netlify.app/",
   },
 ];
 

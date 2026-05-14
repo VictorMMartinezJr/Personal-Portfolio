@@ -4,7 +4,7 @@ import { appsData } from "./projectsData.js";
 
 const AppProjects = () => {
   return (
-    <div
+    <section
       aria-label="Full stack app projects"
       id="projects"
       className="h-auto flex flex-col justify-center items-center px-4 mt-12 xl:text-left xl:px-12 2xl:px-16"
@@ -34,7 +34,7 @@ const AppProjects = () => {
           ),
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
