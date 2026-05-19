@@ -21,7 +21,7 @@ const LandingPages = () => {
               imgSrc={imgSrc}
               demoLink={demoLink}
               GHLink={GitHub}
-              className="md:min-h-[850px]"
+              className="md:min-h-[950px]"
             />
           ),
         )}

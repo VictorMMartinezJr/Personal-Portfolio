@@ -2,6 +2,7 @@ import navaid from "../../assets/navaid.png";
 import echosphere from "../../assets/echosphere.png";
 import luxureDetails from "../../assets/luxuredetails.png";
 import virtualR from "../../assets/virtualR.png";
+import restaura from "../../assets/restaura.png";
 import nexa from "../../assets/nexa.png";
 
 const appsData = [
@@ -69,6 +70,25 @@ const appsData = [
 
 const landingPagesData = [
   {
+    name: "Restaura",
+    skills: [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "React",
+      "TailwindCSS",
+      "Responsive UI",
+      "Framer Motion",
+      "Cloudinary",
+      "Netlify",
+    ],
+    imgSrc: restaura,
+    description:
+      "Restaura is a premium, responsive front-end website designed for a concept fusion restaurant specializing in Indian and Japanese cuisine. Optimized images and subtle animations with framer motion create an engaging user experience.",
+    GitHub: "https://github.com/VictorMMartinezJr/Restaura",
+    demoLink: "https://restaura-v1.netlify.app",
+  },
+  {
     name: "VirtualR",
     skills: [
       "HTML",
@@ -77,6 +97,7 @@ const landingPagesData = [
       "React",
       "TailwindCSS",
       "Responsive UI",
+      "Cloudinary",
       "Netlify",
     ],
     imgSrc: virtualR,
