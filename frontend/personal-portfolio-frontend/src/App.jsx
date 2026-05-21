@@ -28,8 +28,8 @@ function App() {
       <Hero />
       <AboutMe />
       <Skills />
-      <AppProjects />
       <LandingPages />
+      <AppProjects />
       <Contact />
     </main>
   );

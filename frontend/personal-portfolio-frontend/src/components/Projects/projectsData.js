@@ -4,6 +4,7 @@ import luxureDetails from "../../assets/luxuredetails.png";
 import virtualR from "../../assets/virtualR.png";
 import restaura from "../../assets/restaura.png";
 import nexa from "../../assets/nexa.png";
+import spylt from "../../assets/spylt.png";
 
 const appsData = [
   {
@@ -69,6 +70,25 @@ const appsData = [
 ];
 
 const landingPagesData = [
+  {
+    name: "Spylt",
+    skills: [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "React",
+      "TailwindCSS",
+      "Responsive UI",
+      "GSAP",
+      "Cloudinary",
+      "Netlify",
+    ],
+    imgSrc: spylt,
+    description:
+      "Spylt is a premium, fully animated landing page for a beverage company. It features a clean, responsive design with optimized images and engaging animations created with GSAP including ScrollTrigger, clip path animations, and horizontal scrolling sections.\n\nBest experience on desktop devices",
+    GitHub: "https://github.com/VictorMMartinezJr/spylt",
+    demoLink: "https://spylt-v1.netlify.app",
+  },
   {
     name: "Restaura",
     skills: [
