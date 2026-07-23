@@ -1,6 +1,6 @@
-import Project from "./Project";
-import SectionTitle from "../SectionTitle";
-import { appsData } from "./projectsData.js";
+import Project from "../Project.jsx";
+import SectionTitle from "../../SectionTitle.jsx";
+import { appsData } from "../projectsData.js";
 
 const AppProjects = () => {
   return (
