@@ -38,7 +38,7 @@ const Hero = () => {
           }}
           transition={{ duration: 0.5, ease: "easeInOut", delay: 1.2 }}
         >
-          Full Stack Developer
+          Data Analyst
         </motion.h2>
 
         {/* CTA buttons */}
