@@ -69,7 +69,7 @@ const Project = ({
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Visit live demo"
-          className="cursor-pointer"
+          className={`${demoLink ? "cursor-pointer" : "opacity-50 pointer-events-none"}`}
         >
           <motion.div
             className="w-7 h-7 transform transition-transform duration-200 hover:scale-150 mr-4"
@@ -79,7 +79,9 @@ const Project = ({
             }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 1.4 }}
           >
-            <FiExternalLink className="w-7 h-7" />
+            <FiExternalLink
+              className={`w-7 h-7 ${!demoLink && "opacity-50"}`}
+            />
           </motion.div>
         </a>
         <a
