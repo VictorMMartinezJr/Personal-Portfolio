@@ -1,5 +1,5 @@
 import SectionTitle from "../SectionTitle.jsx";
-import { dataAnalyticsData } from "./projectsData.js";
+import { dataAnalyticsData } from "../../projectsData.js";
 import Project from "./Project.jsx";
 
 const DataAnalytics = () => {

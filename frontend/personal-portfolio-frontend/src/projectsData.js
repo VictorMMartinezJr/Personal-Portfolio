@@ -1,5 +1,43 @@
-import nasaTableau from "../../assets/nasa-tableau.png";
+import nasaTableau from "./assets/nasa-tableau.png";
 const dataAnalyticsData = [
+  {
+    name: "NASA Near Earth Object Analytics",
+    skills: [
+      "Python",
+      "PostgreSQL",
+      "SQL",
+      "Tableau",
+      "REST API",
+      "Pandas",
+      "SQLAlchemy",
+      "ETL Pipeline",
+    ],
+    imgSrc: nasaTableau,
+    description:
+      "An automated end-to-end data pipeline and interactive analytics dashboard processing live space telemetry from NASA's REST API.\n\nKey Highlights:\n• Built a Python ETL pipeline using Requests & Pandas to ingest, clean, and normalize asteroid tracking data.\n• Designed a PostgreSQL schema using SQLAlchemy, executing complex SQL queries with CTEs & Window Functions (DENSE_RANK) to calculate daily velocity trends, hazard ratios, and Lunar Distance proximity metrics.\n• Developed a dual-layout interactive Tableau Dashboard with custom collapsible filter menus and KPI summaries for stakeholders.",
+    GitHub: "https://github.com/VictorMMartinezJr/nasa_neows_analysis",
+    demoLink:
+      "https://public.tableau.com/views/NASANeo/NEODashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+  },
+  {
+    name: "NASA Near Earth Object Analytics",
+    skills: [
+      "Python",
+      "PostgreSQL",
+      "SQL",
+      "Tableau",
+      "REST API",
+      "Pandas",
+      "SQLAlchemy",
+      "ETL Pipeline",
+    ],
+    imgSrc: nasaTableau,
+    description:
+      "An automated end-to-end data pipeline and interactive analytics dashboard processing live space telemetry from NASA's REST API.\n\nKey Highlights:\n• Built a Python ETL pipeline using Requests & Pandas to ingest, clean, and normalize asteroid tracking data.\n• Designed a PostgreSQL schema using SQLAlchemy, executing complex SQL queries with CTEs & Window Functions (DENSE_RANK) to calculate daily velocity trends, hazard ratios, and Lunar Distance proximity metrics.\n• Developed a dual-layout interactive Tableau Dashboard with custom collapsible filter menus and KPI summaries for stakeholders.",
+    GitHub: "https://github.com/VictorMMartinezJr/nasa_neows_analysis",
+    demoLink:
+      "https://public.tableau.com/views/NASANeo/NEODashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+  },
   {
     name: "NASA Near Earth Object Analytics",
     skills: [

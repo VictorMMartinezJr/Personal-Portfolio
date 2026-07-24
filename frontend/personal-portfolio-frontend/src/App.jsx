@@ -4,7 +4,7 @@ import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact/Contact";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
-import Skills from "./components/Skills";
+import Skills from "./components/Skills/Skills";
 import StarsBackground from "./components/StarsBackground";
 import DataProjects from "./components/Projects/DataProjects.jsx";
 

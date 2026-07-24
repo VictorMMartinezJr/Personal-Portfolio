@@ -22,11 +22,11 @@ const AboutMe = () => {
           Mathematics at Kennesaw State University (4.0 GPA).
         </p>
         <p className="mb-4 px-4 text-lg sm:text-2xl">
-          As Co-Founder & President of the Innovative Programming Club, I
-          mentored students in SQL querying, Python data analysis, and modern
-          software practices. I am seeking a Data Analyst role where I can apply
-          my analytical skills, SQL/Python expertise, and competitive drive to
-          solve complex business problems.
+          As Co-Founder & President of a Innovative Programming Club at my
+          prevous college, I mentored students in SQL querying, Python data
+          analysis, and modern software practices. I'm seeking a Data Analyst
+          role where I can apply my analytical SQL/Python skills and competitive
+          drive to solve complex business problems.
         </p>
       </div>
       <div className="flex justify-center items-center lg:flex-1">
