@@ -2,12 +2,13 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithubAlt } from "react-icons/fa";
+import DashboardPlaceholder from "../DashboardPlaceholder";
 
 const Project = ({
   name,
   skills,
+  logo,
   description,
-  disclaimer,
   imgSrc,
   GHLink,
   demoLink,
@@ -39,16 +40,27 @@ const Project = ({
           </span>
         ))}
       </div>
+
+      <div className="my-3 flex justify-center items-center">
+        <img
+          src={logo}
+          alt={name}
+          className="h-40 w-auto object-contain max-w-[150px] drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+        />
+      </div>
+
+      {/* Description */}
       <p className="px-4 my-4 text-lg flex-1 md:text-xl">{description}</p>
 
-      {disclaimer && (
-        <>
-          <hr className="my-2 border-gray-700" />
-          <p className="text-xs text-yellow-500 italic px-4">{disclaimer}</p>
-        </>
+      {imgSrc ? (
+        <img
+          src={imgSrc}
+          alt={`${name} preview`}
+          className="w-full object-cover rounded-md my-4 px-2"
+        />
+      ) : (
+        <DashboardPlaceholder title={`${name} Data Architecture`} />
       )}
-
-      <img src={imgSrc} alt="" className="px-4" />
       {/* Icons */}
       <div className="w-full flex justify-start my-4 px-4">
         <a

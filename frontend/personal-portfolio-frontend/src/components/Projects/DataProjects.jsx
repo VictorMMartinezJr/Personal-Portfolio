@@ -12,16 +12,17 @@ const DataAnalytics = () => {
       <SectionTitle title="Data Analytics" />
       <div className="flex flex-col justify-center items-center whitespace-pre-line md:grid md:grid-cols-2 md:gap-4 xl:grid-cols-3">
         {dataAnalyticsData.map(
-          ({ name, skills, description, imgSrc, demoLink, GitHub }) => (
+          ({ name, skills, logo, description, imgSrc, demoLink, GitHub }) => (
             <Project
               key={name}
               name={name}
               skills={skills}
+              logo={logo}
               description={description}
               imgSrc={imgSrc}
               demoLink={demoLink}
               GHLink={GitHub}
-              className="md:min-h-[950px]"
+              className="md:min-h-[1650px]"
             />
           ),
         )}
